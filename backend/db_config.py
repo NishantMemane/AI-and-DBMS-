@@ -1,41 +1,4 @@
 
-# #Db_config.py
-# import pyodbc
-
-# # ================== UPDATE THESE ==================
-# server = 'DESKTOP-3OQGQOV\\SQLEXPRESS'  # Your SQL Server instance
-# database = 'personal_finance_tracker'    # Your database name
-# username = 'sa'                          # SQL Server username (optional if using Trusted Connection)
-# password = 'Nishant@12'                  # SQL Server password
-# # ==================================================
-
-# def get_connection():
-#     """
-#     Returns a connection object to the SQL Server database.
-#     Tries SQL Server Authentication first, then Windows Authentication as fallback.
-#     """
-#     try:
-#         # SQL Server Authentication
-#         conn = pyodbc.connect(
-#             f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
-#         )
-#         print(" Connected using SQL Server Authentication!")
-#         return conn
-#     except Exception as e_sql:
-#         print(" SQL Server Authentication failed:", e_sql)
-#         print("Trying Windows Authentication...")
-
-#         try:
-#             # Windows Authentication
-#             conn = pyodbc.connect(
-#                 f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};Trusted_Connection=yes;'
-#             )
-#             print("Connected using Windows Authentication!")
-#             return conn
-#         except Exception as e_win:
-#             print("Windows Authentication also failed:", e_win)
-#             return None
-
 
 import pyodbc
 
