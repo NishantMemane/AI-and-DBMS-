@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import date as dt_date
 import matplotlib.pyplot as plt
 
-# Assuming these modules are available and correct in your project structure:
+
 from users import login_user, signup_user
 from income import add_income, get_income, delete_income
 from expenses import add_expense, get_expenses, delete_expense
